@@ -21,3 +21,27 @@ var requireNewWord = false;
 var incorrectLetters = [];
 var correctLetters = [];
 
+// Guesses left
+var guessesLeft = 10;
+
+function knowledge() {
+
+    // Generates new word for Word constructor if true
+    if (requireNewWord) {
+        // Selects random countries array
+        var randomIndex = Math.floor(Math.random() * countries.length);
+        var randomWord = countries[randomIndex];
+
+        // Passes random word through the Word constructor
+        computerWord = new Word(randomWord);
+
+        
+        requireNewWord = false;
+    }
+
+
+    // TestS if a letter guessed is correct
+    var wordComplete = [];
+    computerWord.objArray.forEach(completeCheck);
+
+   
