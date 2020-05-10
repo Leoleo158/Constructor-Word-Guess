@@ -127,3 +127,27 @@ function knowledge() {
 
 }
 
+function restartGame() {
+    inquirer
+        .prompt([
+            {
+                type: "list",
+                message: "Would you like to:",
+                choices: ["Play Again", "Exit"],
+                name: "restart"
+            }
+        ])
+        .then(function (input) {
+            if (input.restart === "Play Again") {
+                requireNewWord = true;
+                incorrectLetters = [];
+                correctLetters = [];
+                guessesLeft = 10;
+                knowledge();
+            } else {
+                return
+            }
+        })
+}
+
+knowledge();
