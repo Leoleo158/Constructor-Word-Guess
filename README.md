@@ -19,3 +19,5 @@ Word.js should only require Letter.js
 
 Screenshots
 
+<img width="1124" alt="Screen Shot 2020-05-09 at 8 39 37 PM" src="https://user-images.githubusercontent.com/61090406/81489961-11f0b400-9239-11ea-87f4-dcd09c9ce02a.png">
+<img width="1117" alt="Screen Shot 2020-05-09 at 8 40 22 PM" src="https://user-images.githubusercontent.com/61090406/81489962-1321e100-9239-11ea-8e62-1568c11a80d4.png">
